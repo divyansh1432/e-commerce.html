@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>log in for business</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+
+<style >
+	body{background-color: #e4e6eb;}
+	form {margin-top: 30px;
+	}
+.fm {width:320px; height: 250px; background-color: #fff;}
+.fmm  {width:420px; height: 430px; background-color: #fff; margin-top: -260px; margin-left: 500px; position: absolute; visibility: hidden;}
+
+
+
+</style>
+<script >
+
+
+
+
+function signin(){
+document.getElementById("fmmm").style.visibility = "hidden"
+}
+function signup(){
+document.getElementById("fmmm").style.visibility = " visible"
+}
+
+ </script>
+
+</head>
+<body>
+
+
+<center>
+
+<div style="margin-top: 100px;" class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-secondary" onclick="signin()">sign in </button>
+  <button type="button" class="btn btn-secondary" onclick="signup()">sign up</button>
+</div>
+
+</div>
+
+	<div class="fm">
+	<form>
+  <div class="form-group-sm"><br> <br>
+    <label style="margin-left: -150px;"  for="exampleInputEmail1"><b> mobile no / Email </b></label><br>
+    <input id="mobile" style="width: 300px;" type="text" placeholder=" mobile no / Email" name="">
+    <br>
+    <label style="margin-left: -200px;" for="exampleInputEmail1"><b> password</b> </label><br>
+    <input id="email" style="width: 300px;" type="text" placeholder="password" name=""> <br>
+   
+<br> <a href="#"> forgot password ? </a>
+  <button onclick="ss()" type="submit" style="height: 35px; background-color: ">Sign in</button>
+    </div>
+</form></div>
+</center> 
+
+<center>
+
+
+
+
+	<div id="fmmm" class="fmm">
+	<form>
+  <div class="form-group-sm"><br> <h5> sign up</h5> <br>
+    <label style="margin-left: -210px;"  for="exampleInputEmail1"><b> mobile no  </b></label><br>
+    <input style="width: 300px;" type="text" placeholder=" mobile no " name=""> 
+    <br>
+
+    <label style="margin-left: -210px;"  for="exampleInputEmail1"><b> Email id </b></label><br>
+    <input style="width: 300px;" type="text" placeholder=" Email id" name=""><br>
+    <label style="margin-left: -180px;" for="exampleInputEmail1"><b> create password</b> </label><br>
+    <input style="width: 300px;" type="text" placeholder="password" name=""> <br>
+    <label style="margin-left: -180px;" for="exampleInputEmail1"><b> Retype password</b> </label><br>
+    <input style="width: 300px;" type="text" placeholder=" Retype password" name=""> <br>
+<br> <a href="#"> forgot password ? </a>
+  <button type="submit" style="height: 35px; background-color: ">Sign up</button>
+    </div>
+</form></div>
+</center>
+
+</body>
+</html>
